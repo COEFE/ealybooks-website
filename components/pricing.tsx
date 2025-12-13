@@ -29,10 +29,9 @@ const plans = [
     features: [
       "Everything in Starter",
       "Accounts Payable tracking",
-      "Bill payment reminders",
+      "Accounts Receivable tracking",
       "Multi-account reconciliation",
       "Priority support",
-      "QuickBooks Online sync",
     ],
     popular: true,
   },
@@ -45,7 +44,7 @@ const plans = [
     features: [
       "Everything in Growth",
       "Dedicated bookkeeper",
-      "Custom integrations",
+      "Custom workflows",
       "Advanced reporting",
       "Phone support",
       "Quarterly strategy calls",
