@@ -22,9 +22,9 @@ export function Header() {
           <Image
             src="/logo.png"
             alt="EalyBooks Bookkeeping"
-            width={220}
-            height={60}
-            className="h-14 w-auto"
+            width={280}
+            height={280}
+            className="h-20 w-auto"
             priority
           />
         </Link>
