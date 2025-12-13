@@ -54,28 +54,28 @@ export function Contact() {
                   Email
                 </span>
                 <a
-                  href="mailto:hello@ealybooks.com"
+                  href="mailto:chris@ealybooks.com"
                   className="hover:underline underline-offset-4"
                 >
-                  hello@ealybooks.com
+                  chris@ealybooks.com
                 </a>
               </div>
               <div className="flex items-start gap-4">
                 <span className="w-24 text-sm uppercase tracking-widest opacity-70">
-                  Text
+                  Phone
                 </span>
                 <a
-                  href="sms:+16465409940"
+                  href="tel:+13473138627"
                   className="hover:underline underline-offset-4"
                 >
-                  (646) 540-9940
+                  (347) 313-8627
                 </a>
               </div>
               <div className="flex items-start gap-4">
                 <span className="w-24 text-sm uppercase tracking-widest opacity-70">
                   Based in
                 </span>
-                <span>Chattanooga, TN</span>
+                <span>New York City</span>
               </div>
             </div>
 
