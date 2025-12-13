@@ -31,22 +31,23 @@ export function About() {
         <div className="grid grid-cols-12 gap-8 lg:gap-16">
           {/* Left Column - Title and Intro */}
           <div className="col-span-12 lg:col-span-5">
-            <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-6">
-              MEET
-              <br />
-              CHRIS
-            </h2>
-
-            {/* Photo */}
-            <div className="mb-8 border-2 border-black w-40 h-40">
-              <Image
-                src="/chris-ealy.jpg"
-                alt="Christopher Ealy - Founder of EalyBooks"
-                width={160}
-                height={160}
-                className="w-full h-full object-cover object-top"
-                priority
-              />
+            <div className="flex items-center gap-6 mb-8">
+              {/* Photo */}
+              <div className="border-2 border-black w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+                <Image
+                  src="/chris-ealy.jpg"
+                  alt="Christopher Ealy - Founder of EalyBooks"
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-cover object-top"
+                  priority
+                />
+              </div>
+              <h2 className="text-5xl md:text-6xl font-bold tracking-tighter">
+                MEET
+                <br />
+                CHRIS
+              </h2>
             </div>
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
