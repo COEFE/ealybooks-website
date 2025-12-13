@@ -43,6 +43,12 @@ export function Header() {
             How It Works
           </button>
           <button
+            onClick={() => scrollToSection("about")}
+            className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
+          >
+            About
+          </button>
+          <button
             onClick={() => scrollToSection("pricing")}
             className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors"
           >
@@ -89,6 +95,12 @@ export function Header() {
               className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors text-left"
             >
               How It Works
+            </button>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="text-sm uppercase tracking-widest text-muted-foreground hover:text-foreground transition-colors text-left"
+            >
+              About
             </button>
             <button
               onClick={() => scrollToSection("pricing")}
