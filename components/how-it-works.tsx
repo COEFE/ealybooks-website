@@ -1,35 +1,35 @@
 "use client"
 
-import { Phone, Users, FileText, MessageSquare } from "lucide-react"
+import { Phone, Zap, FileText, MessageSquare } from "lucide-react"
 
 const steps = [
   {
     number: "01",
     icon: Phone,
-    title: "Free Consultation",
+    title: "Quick Intro Call",
     description:
-      "We start with a 15-minute call to understand your business. We'll review your current setup, discuss your needs, and give you an honest assessment of whether we're a good fit.",
+      "15 minutes to understand your business and current setup. We'll tell you honestly if we're a good fit—no hard sell.",
   },
   {
     number: "02",
-    icon: Users,
-    title: "Onboarding",
+    icon: Zap,
+    title: "Fast Onboarding",
     description:
-      "We connect to your bank and credit card accounts (read-only access). If your books need cleanup, we'll handle that first. No work begins until you've signed our agreement and setup is complete.",
+      "We connect to your accounts (read-only), set up your dashboard, and handle any cleanup. Most clients are fully onboarded within a week.",
   },
   {
     number: "03",
     icon: FileText,
-    title: "Monthly Bookkeeping",
+    title: "Monthly Close",
     description:
-      "Each month, we reconcile your accounts, categorize every transaction, and deliver your P&L and Balance Sheet. Books are closed within 10 days of month-end. Every transaction is reviewed by a real person.",
+      "Each month: reconciliation, categorization, and your reports delivered. Books closed within 10 days. Dashboard updated in real-time as we work.",
   },
   {
     number: "04",
     icon: MessageSquare,
-    title: "Ongoing Support",
+    title: "Always Available",
     description:
-      "Questions? Just text or email us. Need a report for your bank or accountant? We've got you. We're here to make your financial life easier—not just at month-end, but whenever you need us.",
+      "Text us anytime. Need a report for a loan application? Done. Question about a transaction? We respond within 24 hours.",
   },
 ]
 
@@ -41,15 +41,13 @@ export function HowItWorks() {
           {/* Left Column - Title */}
           <div className="col-span-12 lg:col-span-4">
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-6">
-              HOW WE
+              HOW IT
               <br />
-              WORK
-              <br />
-              TOGETHER
+              WORKS
             </h2>
             <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Simple process. Clear communication.
-              No surprises. Here's what working with us looks like.
+              Simple onboarding. Fast setup.
+              No lengthy implementations or confusing processes.
             </p>
             <div className="hidden lg:block">
               <div className="aspect-[4/3] bg-secondary relative">
@@ -96,19 +94,18 @@ export function HowItWorks() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-4xl font-bold tracking-tighter mb-6">
-                RECEIPTS? JUST TEXT US.
+                RECEIPTS? JUST TEXT.
               </h3>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                No apps to download. No folders to organize.
-                Just snap a photo and text it to us. We'll match it to the right transaction
-                and store it for tax time.
+                No apps. No portals. No folders.
+                Text a photo, get a fast confirmation. It works the way you'd expect.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
                     1
                   </div>
-                  <p>Take a photo of your receipt</p>
+                  <p>Snap a photo of your receipt</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
@@ -120,7 +117,7 @@ export function HowItWorks() {
                   <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
                     3
                   </div>
-                  <p>We match it and file it for you</p>
+                  <p>Get confirmation—matched and filed</p>
                 </div>
               </div>
             </div>
@@ -132,7 +129,7 @@ export function HowItWorks() {
                   <div className="flex justify-end">
                     <div className="bg-black text-white px-4 py-2 max-w-[80%]">
                       <div className="w-32 h-40 bg-white/20 mb-2 flex items-center justify-center text-xs">
-                        [Receipt Image]
+                        [Receipt]
                       </div>
                     </div>
                   </div>
@@ -141,7 +138,7 @@ export function HowItWorks() {
                     <div className="bg-white border-2 border-black px-4 py-3 max-w-[80%]">
                       <p className="text-sm font-bold mb-1">EalyBooks</p>
                       <p className="text-sm">
-                        Got it! I'll match this to your Home Depot transaction from yesterday.
+                        Got it! Matched to your Home Depot purchase.
                       </p>
                     </div>
                   </div>
@@ -149,9 +146,9 @@ export function HowItWorks() {
                   <div className="flex justify-start">
                     <div className="bg-white border-2 border-black px-4 py-3 max-w-[80%]">
                       <p className="text-sm">
-                        ✓ Receipt matched and filed.
+                        ✓ Filed under Office Supplies
                         <br />
-                        Office Supplies: $127.43
+                        $127.43
                       </p>
                     </div>
                   </div>

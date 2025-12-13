@@ -1,4 +1,4 @@
-import { BookOpen, Wrench, Receipt, FileText } from "lucide-react"
+import { BookOpen, Wrench, MessageSquare, LayoutDashboard } from "lucide-react"
 
 const services = [
   {
@@ -6,32 +6,32 @@ const services = [
     icon: BookOpen,
     title: "Monthly Bookkeeping",
     description:
-      "We reconcile your bank and credit card accounts, categorize every transaction, and deliver monthly P&L and Balance Sheet reports. You'll always know exactly where your business stands.",
-    outcome: "Books closed within 10 days",
+      "Bank and credit card reconciliation, transaction categorization, and monthly P&L and Balance Sheet reports. Your books closed within 10 days of month-end, every month.",
+    outcome: "Books closed in 10 days",
   },
   {
     number: "02",
     icon: Wrench,
     title: "Catch-Up & Cleanup",
     description:
-      "Behind on your books? We'll clean up months (or years) of backlog so you can start fresh. Most cleanups take 1-2 weeks, and you'll finally have accurate financials for tax time.",
+      "Behind on your books? We'll clean up months or years of backlog so you can start fresh. Most cleanups done in 1-2 weeks—so you're ready for tax time or that investor meeting.",
     outcome: "Start fresh in 1-2 weeks",
   },
   {
     number: "03",
-    icon: Receipt,
-    title: "Receipt Matching",
+    icon: MessageSquare,
+    title: "Text-Based Receipts",
     description:
-      "Text us a photo of any receipt. We'll match it to the right transaction and store it for tax time. No apps to download, no folders to organize—just text like you would a friend.",
-    outcome: "Receipts stored for audit",
+      "Snap a photo, text it to us. We match it to the right transaction and store it for tax time. No apps to install, no portals to log into. Works like you'd expect in 2025.",
+    outcome: "Fast confirmation via text",
   },
   {
     number: "04",
-    icon: FileText,
-    title: "Accounts Payable",
+    icon: LayoutDashboard,
+    title: "Real-Time Dashboard",
     description:
-      "Forward your bills to us. We'll track what's due, remind you before deadlines, and help you stay on top of vendor payments. Never miss a payment or lose track of what you owe.",
-    outcome: "Zero missed payments",
+      "See your financials anytime. No waiting for monthly emails or PDF attachments. Your P&L, balance sheet, and cash position—always up to date, always accessible.",
+    outcome: "24/7 visibility",
   },
 ]
 
@@ -47,9 +47,8 @@ export function Services() {
           </div>
           <div className="col-span-12 lg:col-span-6 flex items-end">
             <p className="text-xl text-white/70 leading-relaxed">
-              We handle your books so you can focus on running your business.
-              Every transaction is reviewed by a real person—we just use smart tools
-              to work faster.
+              Modern bookkeeping for businesses that expect more. Fast turnaround,
+              real-time access, and an experience that doesn't feel stuck in 2005.
             </p>
           </div>
         </div>
@@ -97,21 +96,21 @@ export function Services() {
             <div className="col-span-12 lg:col-span-8">
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="border-l-2 border-primary pl-4">
-                  <p className="text-white/70">Bookkeepers who take weeks to close the month?</p>
+                  <p className="text-white/70">Clunky portals that feel like they were built in 2008?</p>
                 </div>
                 <div className="border-l-2 border-primary pl-4">
-                  <p className="text-white/70">Chasing down someone who never responds?</p>
+                  <p className="text-white/70">Waiting weeks to see your own financial data?</p>
                 </div>
                 <div className="border-l-2 border-primary pl-4">
-                  <p className="text-white/70">Doing it yourself because hiring feels complicated?</p>
+                  <p className="text-white/70">Bookkeepers who don't respond to texts?</p>
                 </div>
                 <div className="border-l-2 border-primary pl-4">
-                  <p className="text-white/70">Messy books that stress you out at tax time?</p>
+                  <p className="text-white/70">Doing it yourself because hiring feels like a hassle?</p>
                 </div>
               </div>
               <p className="text-xl text-white mt-8">
-                We're different. Your books closed in 10 days. Responses within 24 hours.
-                Simple pricing. A real person on every transaction.
+                We built EalyBooks for people like us—people who expect their vendors
+                to be as tech-forward as they are.
               </p>
             </div>
           </div>

@@ -14,9 +14,9 @@ const plans = [
       "Bank & credit card reconciliation",
       "Transaction categorization",
       "Monthly P&L & Balance Sheet",
-      "SMS receipt matching",
-      "Email support (24hr response)",
-      "Books closed within 10 days",
+      "Text-based receipt capture",
+      "Real-time dashboard access",
+      "24hr response time",
     ],
     popular: false,
   },
@@ -37,7 +37,7 @@ const plans = [
     popular: true,
   },
   {
-    name: "Premium",
+    name: "Scale",
     price: "Custom",
     period: "let's talk",
     description: "For established businesses",
@@ -45,10 +45,10 @@ const plans = [
     features: [
       "Everything in Growth",
       "Dedicated bookkeeper",
-      "Weekly check-ins available",
-      "Custom reporting",
+      "Custom integrations",
+      "Advanced reporting",
       "Phone support",
-      "Quarterly review calls",
+      "Quarterly strategy calls",
     ],
     popular: false,
   },
@@ -68,8 +68,8 @@ export function Pricing() {
             SIMPLE PRICING
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Fixed monthly fees based on your transaction volume.
-            No hidden fees. No hourly billing. No surprises.
+            Fixed monthly fees based on transaction volume.
+            No hourly billing. No surprise invoices. Know what you'll pay.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export function Pricing() {
                       : "bg-black text-white hover:bg-primary"
                   }`}
                 >
-                  {plan.price === "Custom" ? "Let's Talk" : "Schedule a Call"}
+                  {plan.price === "Custom" ? "Let's Talk" : "Get Started"}
                 </Button>
               </div>
             </div>
@@ -131,7 +131,7 @@ export function Pricing() {
         {/* Additional Info */}
         <div className="mt-16 text-center">
           <p className="text-muted-foreground mb-4">
-            Need a cleanup first? We'll quote that separately based on how far behind you are.
+            Behind on your books? We'll quote cleanup separately based on backlog size.
           </p>
           <button
             onClick={scrollToContact}
@@ -146,42 +146,43 @@ export function Pricing() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-3xl font-bold tracking-tighter mb-4">
-                WHY FIXED PRICING?
+                WHAT'S INCLUDED
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Many bookkeepers bill hourly, which means you never know what you'll pay.
-                We prefer transaction-based pricing—you know exactly what to expect each month.
+                Every plan includes real-time dashboard access, text-based receipt capture,
+                and 24-hour response times. We use modern tools to work efficiently—you
+                get the benefits without paying hourly rates.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                If your business grows and transactions increase significantly, we'll have
-                a conversation about adjusting your plan. No surprises.
+                If your transaction volume grows significantly, we'll talk about
+                moving to the next tier. No surprises, no retroactive billing.
               </p>
             </div>
             <div className="bg-white border-2 border-black p-8">
               <div className="space-y-6">
                 <div className="flex justify-between items-center pb-4 border-b border-black/20">
-                  <span className="font-bold">What You Get</span>
+                  <span className="font-bold">Every Plan Includes</span>
                 </div>
                 <div className="space-y-4 text-muted-foreground">
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Real bookkeeper reviewing every transaction</span>
+                    <span>Real-time financial dashboard</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Books closed within 10 days of month-end</span>
+                    <span>Text-based receipt capture</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>24-hour response time on all questions</span>
+                    <span>Books closed within 10 days</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Receipt matching via text message</span>
+                    <span>24-hour response guarantee</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Monthly reports delivered to your inbox</span>
+                    <span>Human review on every transaction</span>
                   </div>
                 </div>
               </div>
