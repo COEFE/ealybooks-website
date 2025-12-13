@@ -89,69 +89,58 @@ export function HowItWorks() {
           </div>
         </div>
 
-        {/* Receipt texting feature */}
+        {/* Dashboard feature */}
         <div className="mt-20 pt-20 border-t-2 border-black">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-4xl font-bold tracking-tighter mb-6">
-                RECEIPTS? JUST TEXT.
+                YOUR NUMBERS. ANYTIME.
               </h3>
               <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                No apps. No portals. No folders.
-                Text a photo, get a fast confirmation. It works the way you'd expect.
+                No more waiting for monthly emails or chasing down your bookkeeper
+                for a report. Your dashboard is always up to date.
               </p>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
-                    1
+                    ✓
                   </div>
-                  <p>Snap a photo of your receipt</p>
+                  <p>P&L and Balance Sheet updated in real-time</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
-                    2
+                    ✓
                   </div>
-                  <p>Text it to (646) 540-9940</p>
+                  <p>Cash position and runway at a glance</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
-                    3
+                    ✓
                   </div>
-                  <p>Get confirmation—matched and filed</p>
+                  <p>Export reports anytime you need them</p>
                 </div>
               </div>
             </div>
             <div className="bg-secondary p-8">
-              {/* Phone mockup */}
-              <div className="bg-white border-2 border-black p-4 max-w-xs mx-auto">
-                <div className="bg-secondary p-4 space-y-4">
-                  {/* Sent message */}
-                  <div className="flex justify-end">
-                    <div className="bg-black text-white px-4 py-2 max-w-[80%]">
-                      <div className="w-32 h-40 bg-white/20 mb-2 flex items-center justify-center text-xs">
-                        [Receipt]
-                      </div>
-                    </div>
+              {/* Dashboard mockup */}
+              <div className="bg-white border-2 border-black p-6 max-w-xs mx-auto">
+                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Live Dashboard</div>
+                <div className="space-y-4">
+                  <div className="border-b border-black/20 pb-3">
+                    <p className="text-xs text-muted-foreground">Revenue (MTD)</p>
+                    <p className="text-2xl font-bold">$24,500</p>
                   </div>
-                  {/* Response */}
-                  <div className="flex justify-start">
-                    <div className="bg-white border-2 border-black px-4 py-3 max-w-[80%]">
-                      <p className="text-sm font-bold mb-1">EalyBooks</p>
-                      <p className="text-sm">
-                        Got it! Matched to your Home Depot purchase.
-                      </p>
-                    </div>
+                  <div className="border-b border-black/20 pb-3">
+                    <p className="text-xs text-muted-foreground">Expenses (MTD)</p>
+                    <p className="text-2xl font-bold">$18,230</p>
                   </div>
-                  {/* Confirmation */}
-                  <div className="flex justify-start">
-                    <div className="bg-white border-2 border-black px-4 py-3 max-w-[80%]">
-                      <p className="text-sm">
-                        ✓ Filed under Office Supplies
-                        <br />
-                        $127.43
-                      </p>
-                    </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground">Net Profit</p>
+                    <p className="text-2xl font-bold text-primary">$6,270</p>
                   </div>
+                </div>
+                <div className="mt-4 pt-4 border-t border-black/20 text-xs text-muted-foreground">
+                  Last updated: 2 hours ago
                 </div>
               </div>
             </div>

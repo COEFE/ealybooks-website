@@ -1,4 +1,4 @@
-import { BookOpen, Wrench, MessageSquare, LayoutDashboard } from "lucide-react"
+import { BookOpen, Wrench, LayoutDashboard, Clock } from "lucide-react"
 
 const services = [
   {
@@ -19,19 +19,19 @@ const services = [
   },
   {
     number: "03",
-    icon: MessageSquare,
-    title: "Text-Based Receipts",
-    description:
-      "Snap a photo, text it to us. We match it to the right transaction and store it for tax time. No apps to install, no portals to log into. Works like you'd expect in 2025.",
-    outcome: "Fast confirmation via text",
-  },
-  {
-    number: "04",
     icon: LayoutDashboard,
     title: "Real-Time Dashboard",
     description:
       "See your financials anytime. No waiting for monthly emails or PDF attachments. Your P&L, balance sheet, and cash position—always up to date, always accessible.",
     outcome: "24/7 visibility",
+  },
+  {
+    number: "04",
+    icon: Clock,
+    title: "Fast Response Time",
+    description:
+      "Questions answered within 24 hours. Need a report for a loan application or investor? We'll get it to you fast. No chasing, no waiting, no excuses.",
+    outcome: "24hr response guarantee",
   },
 ]
 
