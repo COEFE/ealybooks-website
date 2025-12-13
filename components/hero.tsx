@@ -19,7 +19,7 @@ export function Hero() {
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9]">
+            <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.9]">
               BOOKKEEPING
               <br />
               <span className="text-primary">THAT WORKS</span>
@@ -52,20 +52,20 @@ export function Hero() {
               </Button>
             </div>
 
-            <div className="flex items-center gap-8 pt-8 border-t-2 border-black">
+            <div className="flex flex-wrap items-center gap-6 sm:gap-8 pt-8 border-t-2 border-black">
               <div>
-                <p className="text-4xl font-bold tracking-tighter">10</p>
-                <p className="text-sm uppercase tracking-widest text-muted-foreground">Days to Close</p>
+                <p className="text-3xl sm:text-4xl font-bold tracking-tighter">10</p>
+                <p className="text-xs sm:text-sm uppercase tracking-widest text-muted-foreground">Days to Close</p>
               </div>
-              <div className="w-px h-16 bg-black" />
+              <div className="w-px h-12 sm:h-16 bg-black hidden sm:block" />
               <div>
-                <p className="text-4xl font-bold tracking-tighter">24hr</p>
-                <p className="text-sm uppercase tracking-widest text-muted-foreground">Response Time</p>
+                <p className="text-3xl sm:text-4xl font-bold tracking-tighter">24hr</p>
+                <p className="text-xs sm:text-sm uppercase tracking-widest text-muted-foreground">Response Time</p>
               </div>
-              <div className="w-px h-16 bg-black" />
+              <div className="w-px h-12 sm:h-16 bg-black hidden sm:block" />
               <div>
-                <p className="text-4xl font-bold tracking-tighter">100%</p>
-                <p className="text-sm uppercase tracking-widest text-muted-foreground">Human Reviewed</p>
+                <p className="text-3xl sm:text-4xl font-bold tracking-tighter">100%</p>
+                <p className="text-xs sm:text-sm uppercase tracking-widest text-muted-foreground">Human Reviewed</p>
               </div>
             </div>
           </div>

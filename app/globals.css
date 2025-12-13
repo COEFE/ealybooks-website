@@ -123,5 +123,15 @@
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* Ensure minimum touch target size of 44px for accessibility */
+  button, a, input, select, textarea {
+    min-height: 44px;
+  }
+  /* Safe area padding for notched devices */
+  html {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   }
 }
