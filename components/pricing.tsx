@@ -88,7 +88,7 @@ export function Pricing() {
                 </div>
               )}
 
-              <div className="p-8">
+              <div className="p-8 h-full flex flex-col">
                 <h3 className="text-sm uppercase tracking-widest text-muted-foreground mb-2">
                   {plan.name}
                 </h3>
@@ -103,7 +103,7 @@ export function Pricing() {
                   {plan.transactionRange}
                 </p>
 
-                <ul className="space-y-3 mb-8">
+                <ul className="space-y-3 mb-8 flex-grow">
                   {plan.features.map((feature) => (
                     <li key={feature} className="flex items-start gap-3">
                       <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -114,7 +114,7 @@ export function Pricing() {
 
                 <Button
                   onClick={scrollToContact}
-                  className={`w-full py-6 text-sm uppercase tracking-widest ${
+                  className={`w-full py-6 text-sm uppercase tracking-widest mt-auto ${
                     plan.popular
                       ? "bg-primary text-white hover:bg-black"
                       : "bg-black text-white hover:bg-primary"
