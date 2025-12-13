@@ -114,11 +114,7 @@ export function Pricing() {
 
                 <Button
                   onClick={scrollToContact}
-                  className={`w-full py-6 text-sm uppercase tracking-widest mt-auto ${
-                    plan.popular
-                      ? "bg-primary text-white hover:bg-black"
-                      : "bg-black text-white hover:bg-primary"
-                  }`}
+                  className="w-full py-6 text-sm uppercase tracking-widest mt-auto bg-black text-white hover:bg-primary"
                 >
                   {plan.price === "Custom" ? "Let's Talk" : "Get Started"}
                 </Button>
