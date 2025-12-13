@@ -18,15 +18,33 @@ export function Contact() {
   const [loading, setLoading] = useState(false)
   const [submitted, setSubmitted] = useState(false)
 
+  const [error, setError] = useState<string | null>(null)
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
+    setError(null)
 
-    // TODO: Implement form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000))
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
 
-    setSubmitted(true)
-    setLoading(false)
+      if (!response.ok) {
+        throw new Error('Failed to submit form')
+      }
+
+      setSubmitted(true)
+    } catch (err) {
+      setError('Something went wrong. Please try again or email us directly.')
+      console.error('Form submission error:', err)
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -171,6 +189,11 @@ export function Contact() {
                     placeholder="Are you current on your books? Need a cleanup? Just exploring options?"
                   />
                 </div>
+                {error && (
+                  <div className="bg-red-500/20 border border-red-300 text-white px-4 py-3 rounded">
+                    {error}
+                  </div>
+                )}
                 <Button
                   type="submit"
                   disabled={loading}
