@@ -38,13 +38,13 @@ export function About() {
             </h2>
 
             {/* Photo */}
-            <div className="mb-8 border-2 border-black">
+            <div className="mb-8 border-2 border-black w-40 h-40">
               <Image
                 src="/chris-ealy.jpg"
                 alt="Christopher Ealy - Founder of EalyBooks"
-                width={500}
-                height={500}
-                className="w-full aspect-square object-cover object-top"
+                width={160}
+                height={160}
+                className="w-full h-full object-cover object-top"
                 priority
               />
             </div>
