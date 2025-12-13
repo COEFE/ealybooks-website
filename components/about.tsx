@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Building2, Mountain, Printer, Shield } from "lucide-react"
 
 const highlights = [
@@ -35,6 +36,19 @@ export function About() {
               <br />
               CHRIS
             </h2>
+
+            {/* Photo */}
+            <div className="mb-8 border-2 border-black">
+              <Image
+                src="/chris-ealy.jpg"
+                alt="Christopher Ealy - Founder of EalyBooks"
+                width={500}
+                height={500}
+                className="w-full aspect-square object-cover object-top"
+                priority
+              />
+            </div>
+
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
                 Christopher Ealy is an experienced accounting professional specializing in
