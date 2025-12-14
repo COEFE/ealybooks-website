@@ -130,7 +130,7 @@ export function Contact() {
                       setFormData({ ...formData, name: e.target.value })
                     }
                     required
-                    className="w-full bg-transparent border-0 border-b-2 border-white rounded-none py-3 focus:outline-none focus:border-black placeholder-white/50 transition-colors text-white"
+                    className="w-full bg-transparent border-0 border-b-2 border-white/50 rounded-none py-3 focus:outline-none focus:border-white placeholder-white/50 transition-colors text-white"
                     placeholder="Your name"
                   />
                 </div>
@@ -149,7 +149,7 @@ export function Contact() {
                       setFormData({ ...formData, email: e.target.value })
                     }
                     required
-                    className="w-full bg-transparent border-0 border-b-2 border-white rounded-none py-3 focus:outline-none focus:border-black placeholder-white/50 transition-colors text-white"
+                    className="w-full bg-transparent border-0 border-b-2 border-white/50 rounded-none py-3 focus:outline-none focus:border-white placeholder-white/50 transition-colors text-white"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -167,7 +167,7 @@ export function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, business: e.target.value })
                     }
-                    className="w-full bg-transparent border-0 border-b-2 border-white rounded-none py-3 focus:outline-none focus:border-black placeholder-white/50 transition-colors text-white"
+                    className="w-full bg-transparent border-0 border-b-2 border-white/50 rounded-none py-3 focus:outline-none focus:border-white placeholder-white/50 transition-colors text-white"
                     placeholder="e.g., Real Estate, Construction, E-commerce"
                   />
                 </div>
@@ -185,7 +185,7 @@ export function Contact() {
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full bg-transparent border-0 border-b-2 border-white rounded-none py-3 focus:outline-none focus:border-black placeholder-white/50 transition-colors resize-none text-white"
+                    className="w-full bg-transparent border-0 border-b-2 border-white/50 rounded-none py-3 focus:outline-none focus:border-white placeholder-white/50 transition-colors resize-none text-white"
                     placeholder="Are you current on your books? Need a cleanup? Just exploring options?"
                   />
                 </div>
