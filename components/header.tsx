@@ -63,11 +63,6 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link href="https://app.penny-sense.com/login">
-            <Button variant="ghost" className="text-sm uppercase tracking-widest">
-              Client Portal
-            </Button>
-          </Link>
           <Button
             onClick={() => scrollToSection("contact")}
             className="text-sm uppercase tracking-widest bg-black text-white hover:bg-primary"
@@ -115,11 +110,6 @@ export function Header() {
               Contact
             </button>
             <div className="flex flex-col gap-2 pt-4 border-t border-black">
-              <Link href="https://app.penny-sense.com/login">
-                <Button variant="ghost" className="justify-start text-sm uppercase tracking-widest w-full">
-                  Client Portal
-                </Button>
-              </Link>
               <Button
                 onClick={() => scrollToSection("contact")}
                 className="text-sm uppercase tracking-widest bg-black text-white hover:bg-primary w-full"
