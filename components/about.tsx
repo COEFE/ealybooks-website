@@ -52,9 +52,9 @@ export function About() {
 
             <div className="space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Christopher Ealy is an experienced accounting professional specializing in
-                fintech- and SaaS-focused bookkeeping, with a strong foundation in nonprofit
-                and small-business finance.
+                Christopher Ealy is an experienced accounting professional with a strong
+                foundation in small-business and nonprofit finance, specializing in
+                SaaS and fintech-focused bookkeeping.
               </p>
               <p>
                 He currently serves as an Associate Director of Accounting within a New York–based
