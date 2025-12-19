@@ -22,7 +22,7 @@ const steps = [
     icon: FileText,
     title: "Monthly Close",
     description:
-      "Each month: reconciliation, categorization, and your reports delivered. Books closed within 10 days. Dashboard updated in real-time as we work.",
+      "Each month: reconciliation, categorization, and your reports delivered. Dashboard updated in real-time as we work.",
   },
   {
     number: "04",

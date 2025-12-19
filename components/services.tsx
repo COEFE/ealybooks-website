@@ -6,8 +6,8 @@ const services = [
     icon: BookOpen,
     title: "Monthly Bookkeeping",
     description:
-      "Bank and credit card reconciliation, transaction categorization, and monthly P&L and Balance Sheet reports. Your books closed within 10 days of month-end, every month.",
-    outcome: "Books closed in 10 days",
+      "Bank and credit card reconciliation, transaction categorization, and monthly P&L and Balance Sheet reports. Reliable, accurate books you can count on.",
+    outcome: "Monthly reports delivered",
   },
   {
     number: "02",

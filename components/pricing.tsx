@@ -16,7 +16,6 @@ const plans = [
       "Monthly P&L & Balance Sheet",
       "Real-time dashboard access",
       "24hr response time",
-      "Books closed in 10 days",
     ],
     popular: false,
   },
@@ -43,6 +42,7 @@ const plans = [
     transactionRange: "Unlimited transactions",
     features: [
       "Everything in Growth",
+      "Books closed in 10 days",
       "Dedicated bookkeeper",
       "Custom workflows",
       "Advanced reporting",
@@ -145,7 +145,7 @@ export function Pricing() {
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Every plan includes real-time dashboard access, 24-hour response times,
-                and books closed within 10 days. We use modern tools to work efficiently—you
+                and monthly financial reports. We use modern tools to work efficiently—you
                 get the benefits without paying hourly rates.
               </p>
               <p className="text-muted-foreground leading-relaxed">
@@ -165,7 +165,7 @@ export function Pricing() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Books closed within 10 days</span>
+                    <span>Monthly P&L and Balance Sheet</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -174,10 +174,6 @@ export function Pricing() {
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <span>Human review on every transaction</span>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Monthly P&L and Balance Sheet</span>
                   </div>
                 </div>
               </div>

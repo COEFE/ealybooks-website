@@ -15,11 +15,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "EalyBooks | Modern Bookkeeping for Growing Businesses",
-  description: "EalyBooks is a modern bookkeeping firm. Real-time dashboard access, 24-hour response time, books closed in 10 days. Based in New York City.",
+  description: "EalyBooks is a modern bookkeeping firm. Real-time dashboard access, 24-hour response time, monthly financial reports. Based in New York City.",
   keywords: "bookkeeping firm, small business bookkeeping, virtual bookkeeper, outsourced bookkeeping, NYC bookkeeper, real-time dashboard",
   openGraph: {
     title: "EalyBooks - Modern Bookkeeping for Growing Businesses",
-    description: "Real-time dashboard access, 24-hour response time, books closed in 10 days. Based in New York City.",
+    description: "Real-time dashboard access, 24-hour response time, monthly financial reports. Based in New York City.",
     url: "https://ealybooks.com",
     siteName: "EalyBooks",
     type: "website",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "EalyBooks - Modern Bookkeeping for Growing Businesses",
-    description: "Real-time dashboard access, 24-hour response time, books closed in 10 days. Based in New York City.",
+    description: "Real-time dashboard access, 24-hour response time, monthly financial reports. Based in New York City.",
   },
   robots: {
     index: true,
