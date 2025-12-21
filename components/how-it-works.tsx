@@ -15,14 +15,14 @@ const steps = [
     icon: Zap,
     title: "Fast Onboarding",
     description:
-      "We connect to your accounts (read-only), set up your dashboard, and handle any cleanup. Most clients are fully onboarded within a week.",
+      "We connect to your accounts (read-only) and handle any cleanup. Most clients are fully onboarded within a week.",
   },
   {
     number: "03",
     icon: FileText,
     title: "Monthly Close",
     description:
-      "Each month: reconciliation, categorization, and your reports delivered. Dashboard updated in real-time as we work.",
+      "Each month: reconciliation, categorization, and your reports delivered. Books closed within 10 days of month-end.",
   },
   {
     number: "04",
@@ -89,63 +89,6 @@ export function HowItWorks() {
           </div>
         </div>
 
-        {/* Dashboard feature */}
-        <div className="mt-20 pt-20 border-t-2 border-black">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h3 className="text-4xl font-bold tracking-tighter mb-6">
-                YOUR NUMBERS. ANYTIME.
-              </h3>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-                No more waiting for monthly emails or chasing down your bookkeeper
-                for a report. Your dashboard is always up to date.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
-                    ✓
-                  </div>
-                  <p>P&L and Balance Sheet updated in real-time</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
-                    ✓
-                  </div>
-                  <p>Cash position and runway at a glance</p>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-black text-white flex items-center justify-center text-sm font-bold">
-                    ✓
-                  </div>
-                  <p>Export reports anytime you need them</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-secondary p-8">
-              {/* Dashboard mockup */}
-              <div className="bg-white border-2 border-black p-6 max-w-xs mx-auto">
-                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4">Live Dashboard</div>
-                <div className="space-y-4">
-                  <div className="border-b border-black/20 pb-3">
-                    <p className="text-xs text-muted-foreground">Revenue (MTD)</p>
-                    <p className="text-2xl font-bold">$24,500</p>
-                  </div>
-                  <div className="border-b border-black/20 pb-3">
-                    <p className="text-xs text-muted-foreground">Expenses (MTD)</p>
-                    <p className="text-2xl font-bold">$18,230</p>
-                  </div>
-                  <div>
-                    <p className="text-xs text-muted-foreground">Net Profit</p>
-                    <p className="text-2xl font-bold text-primary">$6,270</p>
-                  </div>
-                </div>
-                <div className="mt-4 pt-4 border-t border-black/20 text-xs text-muted-foreground">
-                  Last updated: 2 hours ago
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

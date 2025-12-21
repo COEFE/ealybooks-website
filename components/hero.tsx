@@ -28,9 +28,9 @@ export function Hero() {
             </h1>
 
             <p className="text-xl text-muted-foreground max-w-xl leading-relaxed">
-              See your financials anytime on a real-time dashboard. Get responses in 24 hours,
-              not days. We use modern tools—including AI—to close your books faster and
-              keep you in the loop.
+              Monthly bookkeeping for small businesses. We reconcile your accounts,
+              categorize your expenses, and deliver clear reports—so you always know
+              where you stand.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -62,11 +62,6 @@ export function Hero() {
                 <p className="text-3xl sm:text-4xl font-bold tracking-tighter">24hr</p>
                 <p className="text-xs sm:text-sm uppercase tracking-widest text-muted-foreground">Response Time</p>
               </div>
-              <div className="w-px h-12 sm:h-16 bg-black hidden sm:block" />
-              <div>
-                <p className="text-3xl sm:text-4xl font-bold tracking-tighter">100%</p>
-                <p className="text-xs sm:text-sm uppercase tracking-widest text-muted-foreground">Human Reviewed</p>
-              </div>
             </div>
           </div>
 
@@ -76,9 +71,9 @@ export function Hero() {
               <div className="absolute inset-8 border-2 border-black"></div>
               <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-primary"></div>
 
-              {/* Dashboard mockup */}
+              {/* Report mockup */}
               <div className="absolute top-12 left-12 bg-white border-2 border-black p-6 shadow-lg max-w-[220px]">
-                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Dashboard</div>
+                <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Monthly Report</div>
                 <div className="text-sm font-bold mb-1">December 2025</div>
                 <div className="text-xs text-muted-foreground mb-3">P&L Summary</div>
                 <div className="space-y-2 text-xs border-t border-black pt-2">

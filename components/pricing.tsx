@@ -14,7 +14,7 @@ const plans = [
       "Bank & credit card reconciliation",
       "Transaction categorization",
       "Monthly P&L & Balance Sheet",
-      "Real-time dashboard access",
+      "SMS receipt matching",
       "24hr response time",
     ],
     popular: false,
@@ -144,9 +144,8 @@ export function Pricing() {
                 WHAT'S INCLUDED
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Every plan includes real-time dashboard access, 24-hour response times,
-                and monthly financial reports. We use modern tools to work efficiently—you
-                get the benefits without paying hourly rates.
+                Every plan includes 24-hour response times and monthly financial reports.
+                We work efficiently so you get quality service without paying hourly rates.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 If your transaction volume grows significantly, we'll talk about
@@ -161,7 +160,7 @@ export function Pricing() {
                 <div className="space-y-4 text-muted-foreground">
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Real-time financial dashboard</span>
+                    <span>Accurate, organized books every month</span>
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -173,7 +172,7 @@ export function Pricing() {
                   </div>
                   <div className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span>Human review on every transaction</span>
+                    <span>SMS receipt matching included</span>
                   </div>
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import { BookOpen, Wrench, LayoutDashboard, Clock } from "lucide-react"
+import { BookOpen, Wrench, Receipt, Clock } from "lucide-react"
 
 const services = [
   {
@@ -19,11 +19,11 @@ const services = [
   },
   {
     number: "03",
-    icon: LayoutDashboard,
-    title: "Real-Time Dashboard",
+    icon: Receipt,
+    title: "Receipt Matching",
     description:
-      "See your financials anytime. No waiting for monthly emails or PDF attachments. Your P&L, balance sheet, and cash position—always up to date, always accessible.",
-    outcome: "24/7 visibility",
+      "Text us a photo of any receipt. We'll match it to the right transaction and store it for tax time. No apps to download, no folders to organize.",
+    outcome: "Receipts stored for audit",
   },
   {
     number: "04",
