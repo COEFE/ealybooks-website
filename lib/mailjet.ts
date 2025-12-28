@@ -1,9 +1,21 @@
 import Mailjet from 'node-mailjet';
 
-const mailjet = Mailjet.apiConnect(
-  process.env.MAILJET_API_KEY || '',
-  process.env.MAILJET_SECRET_KEY || ''
-);
+// Lazy initialization to avoid build-time errors
+let mailjetClient: ReturnType<typeof Mailjet.apiConnect> | null = null;
+
+function getMailjetClient() {
+  if (!mailjetClient) {
+    const apiKey = process.env.MAILJET_API_KEY;
+    const secretKey = process.env.MAILJET_SECRET_KEY;
+
+    if (!apiKey || !secretKey) {
+      throw new Error('Mailjet API credentials not configured');
+    }
+
+    mailjetClient = Mailjet.apiConnect(apiKey, secretKey);
+  }
+  return mailjetClient;
+}
 
 interface EmailOptions {
   to: string;
@@ -14,6 +26,8 @@ interface EmailOptions {
 }
 
 export async function sendEmail(options: EmailOptions): Promise<void> {
+  const mailjet = getMailjetClient();
+
   const response = await mailjet
     .post('send', { version: 'v3.1' })
     .request({
