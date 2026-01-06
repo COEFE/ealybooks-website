@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
 
     // Insert submission
     await sql`
-      INSERT INTO contact_submissions (name, email, business_type, message, ip_address, user_agent)
+      INSERT INTO ealybooks_contact_submissions (name, email, business_type, message, ip_address, user_agent)
       VALUES (${name}, ${email}, ${business || null}, ${message || null}, ${ip}, ${userAgent})
     `
 
